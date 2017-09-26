@@ -4,7 +4,7 @@ If you don't have npm installed, please install npm on your machine. (npm instal
 
 On Windows 
 
-npm install 
+npm install typings install
 
 On MAC 
 
