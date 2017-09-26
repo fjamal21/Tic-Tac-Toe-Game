@@ -1,6 +1,8 @@
 Tic-Tac-Toe with Angular 2
 
-On Windows
+If you don't have npm install, please install npm.
+
+On Windows 
 npm install
 typings install
 
