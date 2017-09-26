@@ -1,0 +1,15 @@
+<div id="container">
+    <!-- <span>Current turn: {{this.genericConfig.multiPlayerConfig.playerTurn ? 'test' : 'yo'}}</span> -->
+    <game-grid (onGridElemClick)="onBlockClick($event)" (onMakeAIMove)="makeAIMove($event)">
+    </game-grid>
+</div>
+
+<score-card [isVisible]="scoreCardConfig.isVisible" [title]="scoreCardConfig.title" [body]="scoreCardConfig.body" [showBtn2]="scoreCardConfig.showBtn2" (btn1Callback)="gameQuitSelected()" (btn2Callback)="playAgain()" (closeBtnCallback)="hideScoreCard()">
+</score-card>
+
+<modal-dialogue [isVisible]="modalDialogue.isVisible" [title]="modalDialogue.title" [body]="modalDialogue.body" [showBtn2]="modalDialogue.showBtn2" [btn1Txt]="modalDialogue.btn1Txt" [btn2Txt]="modalDialogue.btn2Txt" (btn1Callback)="modalDialogue.btn1Callback()" (btn2Callback)="modalDialogue.btn2Callback()" (closeBtnCallback)="modalDialogue.closeBtnCallback()">
+</modal-dialogue>
+
+<invite-handler></invite-handler>
+
+<spinner [showLoader]="showLoader"></spinner>

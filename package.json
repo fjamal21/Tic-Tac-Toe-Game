@@ -1,0 +1,49 @@
+{
+    "name": "angular2-quickstart",
+    "version": "1.0.0",
+    "scripts": {
+        "start": "webpack-dev-server --inline --progress --port 8080",
+        "test": "karma start",
+        "build": "rimraf dist && webpack --config config/webpack.prod.js --progress --profile --bail"
+    },
+    "license": "ISC",
+    "dependencies": {
+        "@angular/common": "^2.4.5",
+        "@angular/compiler": "^2.4.5",
+        "@angular/core": "^2.4.5",
+        "@angular/forms": "^2.4.5",
+        "@angular/http": "^2.4.5",
+        "@angular/platform-browser": "^2.4.5",
+        "@angular/platform-browser-dynamic": "^2.4.5",
+        "@angular/router": "^3.4.5",
+        "angular-in-memory-web-api": "~0.2.4",
+        "bootstrap": "^3.3.7",
+        "core-js": "^2.4.1",
+        "rxjs": "^5.0.3",
+        "socket.io": "^1.7.2",
+        "systemjs": "0.20.2",
+        "zone.js": "^0.7.6"
+    },
+    "devDependencies": {
+        "@types/jasmine": "^2.5.41",
+        "@types/node": "^7.0.4",
+        "angular2-template-loader": "^0.6.0",
+        "awesome-typescript-loader": "^3.0.0-beta.18",
+        "copy-webpack-plugin": "^4.0.1",
+        "css-loader": "^0.26.1",
+        "extract-text-webpack-plugin": "^1.0.1",
+        "file-loader": "^0.9.0",
+        "html-loader": "^0.4.4",
+        "html-webpack-plugin": "^2.26.0",
+        "null-loader": "^0.1.1",
+        "raw-loader": "^0.5.1",
+        "rimraf": "^2.5.4",
+        "style-loader": "^0.13.1",
+        "to-string-loader": "^1.1.5",
+        "typescript": "^2.1.5",
+        "typings": "^2.1.0",
+        "webpack": "^1.14.0",
+        "webpack-dev-server": "^1.16.2",
+        "webpack-merge": "^2.5.0"
+    }
+}

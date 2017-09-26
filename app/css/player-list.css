@@ -1,0 +1,43 @@
+.stats-container {
+	width: 100%;
+	margin: 15px auto;
+	position: relative;
+}
+
+.form-control {
+	margin-bottom: 20px;
+}
+
+.group-title {
+	padding: 5px 15px;
+	border-bottom: 1px solid #ddd;
+	cursor: pointer;
+	font-size: 18px;
+}
+
+.group-title .tickmark {
+	display:inline-block;
+	color:red;
+	padding:0 6px 0 0;
+	visibility: hidden;
+}
+
+.row .group-title:first-child {
+  margin-top: 20px;
+}
+
+.row .group-title:nth-child(even){
+  background-color: #fff;
+}
+
+.row .group-title:nth-child(odd){
+  background-color: #f9f9f9;
+}
+
+.row .group-title:hover {
+	background-color: #E0E0E0;
+}
+
+.row .group-title:hover .tickmark {
+	visibility: visible;
+}

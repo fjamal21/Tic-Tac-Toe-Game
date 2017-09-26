@@ -1,0 +1,24 @@
+<div class="game-level">
+    <form (submit)="registerPlayer($event)">
+
+        <div class="level-group">
+            <div class="heading">Game opponent</div>
+            <span class="level-radio" *ngFor="let item of opponentOptions">
+				<input [id]="item.text" type="radio" 
+					name="opponent" (click)="model.opponent = item.value" 
+					[checked]="model.opponent === item.value" />
+                 <label [attr.for]="item.text" class="btn btn-group btn-group-justified" [ngClass]="item.cssClass">
+					{{item.text}}
+				</label>
+			</span>
+        </div>
+
+
+
+    </form>
+</div>
+
+<modal-dialogue [isVisible]="modalDialogue.isVisible" [title]="modalDialogue.title" [body]="modalDialogue.body" [showBtn2]="modalDialogue.showBtn2" [btn1Txt]="modalDialogue.btn1Txt" [btn2Txt]="modalDialogue.btn2Txt" (btn1Callback)="modalDialogue.btn1Callback()" (btn2Callback)="modalDialogue.btn2Callback()" (closeBtnCallback)="modalDialogue.closeBtnCallback()">
+</modal-dialogue>
+
+<spinner [showLoader]="showLoader"></spinner>

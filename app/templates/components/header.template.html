@@ -1,0 +1,11 @@
+<header>
+	<span *ngIf="headerLeftButton.showBtn" class="left" 
+		(click)="headerFunc($event, headerLeftButton.btnType)">
+		{{headerLeftButton.text}}
+	</span>
+	<h2>{{heading}}</h2>
+	<span *ngIf="headerRightButton.showBtn" class="right" 
+		(click)="headerFunc($event, headerRightButton.btnType)">
+		{{headerRightButton.text}}
+	</span>
+</header>

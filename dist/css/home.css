@@ -1,0 +1,163 @@
+.game-level {
+	margin: 10px 0;
+	position: relative;
+	text-align: center;
+}
+
+.game-level form {
+	margin: 0;
+	overflow: hidden;
+	position: relative;
+	text-align: center;
+}
+
+.level-group {
+	overflow: hidden;
+	position: relative;
+    display: inline-block;
+    vertical-align:middle;
+    margin: 0 0 35px;
+    width: 100%;
+}
+
+.level-group .heading {
+	font-family: Georgia, Times, serif;
+	font-size: 18px;
+	margin-bottom: 5px;
+}
+
+.level-radio {
+	margin: 0;
+	display: inline-block;
+	float: left;
+	position: relative;
+}
+
+.level-radio input[type="radio"] {
+	opacity: 0;
+	margin: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.level-radio input[type="radio"] + label {
+	width: 35%;
+	margin: 0 auto;
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    background: #fff;
+}
+
+.level-radio input[type="radio"] + label.btn-primary {
+  color: #337ab7;
+}
+
+.level-radio input[type="radio"] + label.btn-success {
+	color: #5cb85c;
+}
+
+.level-radio input[type="radio"] + label.btn-warning {
+  color: #f0ad4e;
+}
+
+.level-radio input[type="radio"] + label.btn-danger {
+  color: #d9534f;
+}
+
+.level-radio input[type="radio"] + label.btn-info {
+  color: #5bc0de;
+}
+
+.level-radio input[type="radio"]:checked + label,
+.level-radio input[type="radio"]:hover + label:hover {
+	font-weight: bold;
+	color: #fff;
+}
+
+.level-radio input[type="radio"]:checked + label.btn-primary,
+.level-radio input[type="radio"]:hover + .btn-primary:hover {
+  background-color: #286090;
+  border-color: #204d74;
+}
+
+.level-radio input[type="radio"]:checked + label.btn-success,
+.level-radio input[type="radio"]:hover + .btn-success:hover {
+	background-color: #449d44;
+	border-color: #398439;
+}
+
+.level-radio input[type="radio"]:checked + label.btn-warning,
+.level-radio input[type="radio"]:hover + .btn-warning:hover {
+  background-color: #ec971f;
+  border-color: #d58512;
+}
+
+.level-radio input[type="radio"]:checked + label.btn-danger,
+.level-radio input[type="radio"]:hover + .btn-danger:hover {
+  background-color: #c9302c;
+  border-color: #ac2925;
+}
+
+.level-radio input[type="radio"]:checked + label.btn-info,
+.level-radio input[type="radio"]:hover + .btn-info:hover {
+  background-color: #31b0d5;
+  border-color: #269abc;
+}
+
+.start-game-btn:hover,
+.start-game-btn:active,
+.start-game-btn:active:hover {
+	background-color: #286090;
+	border-color: #204d74;
+	color: #fff;
+}
+
+.game-level .selected-level {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    display: inline-block;
+    margin: 0 20px 0 0;
+    vertical-align:middle;
+}
+
+#container .reset-container {
+	float: left;
+	margin: 0 auto;
+	width: 100%;
+}
+
+.reset-container #reset {
+	padding: 5px 10px;
+	color: #fff;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 20px;
+	cursor: pointer;
+	text-align: center;
+	text-transform: uppercase;
+	outline: none;
+	width: 204px
+}
+
+.custom-input {
+	width: 35%;
+	display: block;
+	margin: 0 auto;
+}
+
+.detail-error {
+	/*background-color: #c9302c;*/
+	/*border-color: #ac2925;*/
+	/*border-radius: 3px;*/
+	/*padding: 4px 10px;*/
+	text-align: left;
+	color: #ec971f;
+	font-size: 14px;
+	padding: 2px 3px;
+	margin: 0 auto;
+	width: 35%;
+}
+
+.submit-form {
+	margin: 0 auto;
+}

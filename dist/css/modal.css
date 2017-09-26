@@ -1,0 +1,37 @@
+.modal-dialog-custom {
+	display:  block;
+	background: rgba(0, 0, 0, 0.6);
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.stats-container {
+	width: 100%;
+	margin: 15px auto;
+	position: relative;
+}
+
+.group {
+	width: 400px;
+	color: #000000;
+	display: table-cell;
+	text-align: center;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 18px;
+}
+
+.group-title {
+	padding: 5px 10px;
+	border-top: 1px solid #ddd;
+}
+
+.row div:nth-child(even){
+  background-color: #fff;
+}
+.row div:nth-child(odd){
+  background-color: #f9f9f9;
+}
+
+.text-warning {
+	margin: 0;
+	color: #D80707;
+}

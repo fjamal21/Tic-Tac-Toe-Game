@@ -1,0 +1,21 @@
+<div id="myModal" class="modal modal-dialog-custom" [style.display]="isVisible  ? 'block' : 'none'">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true" (click)="hideModal($event)">&times;</button>
+                <h4 class="modal-title">{{title}}</h4>
+            </div>
+
+
+            <div class="modal-body">
+                <div>{{body}}</div>
+
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal" (click)="mainMenu($event)">Main menu</button>
+                <button *ngIf="showBtn2" type="button" class="btn btn-primary" (click)="playAgain($event)">Play again</button>
+            </div>
+        </div>
+    </div>
+</div>

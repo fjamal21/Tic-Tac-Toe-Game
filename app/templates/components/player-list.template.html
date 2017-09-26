@@ -1,0 +1,22 @@
+<div>
+	<div class="row stats-container" *ngIf="playersList && playersList.length > 0">
+		<!-- <input [(ngModel)]="searchquery" type="text" class="form-control" 
+				placeholder="Search players" id="searchquery" required 
+				name="searchquery" #searchquery="ngModel" /> -->
+
+		<div *ngFor="let key of playersList" class="group-title" 
+			(click)="onRecipientSelected($event, key.emailId)">
+
+			<span class="tickmark">&#10004;</span>
+			{{key.username}} - {{key.emailId}}
+
+		</div>
+	</div>
+	<div *ngIf="!playersList || playersList.length === 0">
+		<span>Currently no players available</span>
+	</div>
+</div>
+
+<invite-handler></invite-handler>
+
+<spinner [showLoader]="showLoader"></spinner>
